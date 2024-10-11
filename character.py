@@ -8,6 +8,8 @@ class Character(pygame.sprite.Sprite):
         self.x = 0
         self.y = 0
         self.alive = True
+        self.speed = 3
+
         self.image = None
         self.rect = pygame.Rect(self.x, self.y, gs.SIZE, gs.SIZE)
 
@@ -18,6 +20,9 @@ class Character(pygame.sprite.Sprite):
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     self.GAME.MAIN.run = False
+        keys_pressed = pygame.key.get_pressed()
+        if keys_pressed[pygame.K_d] or keys_pressed[pygame.K_RIGHT]:
+            self.x == self.speed
 
     def update(self):
         pass
