@@ -7,6 +7,18 @@
 
 .hero {
   background-color: #111;
+  margin-bottom: 20px;
+}
+
+.alignment {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  color: #ffd700;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 .logo {
@@ -15,6 +27,4 @@
   color: #fffdfa;
 }
 
-.logo-icon {
-  color: #ffd700;
-}
+
