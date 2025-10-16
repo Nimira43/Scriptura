@@ -13,7 +13,7 @@ app.get('/api/movies', async (req, res) => {
     const response = await axios.get('http://www.omdbapi.com/', {
       params: {
         apikey: process.env.OMDB_KEY,
-        s: req.query.s
+        ...req.query
       }
     })
     res.json(response.data)
