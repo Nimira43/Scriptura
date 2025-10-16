@@ -1,9 +1,6 @@
 const fetchData = async () => {
-  const response = await axios.get('http://www.omdbapi.com/', {
-    params: {
-      apikey: '',
-      s: 'avengers'
-    }
+  const response = await axios.get('http://localhost:3001/api/movies', {
+    params: { s: 'avengers' }
   })
   console.log(response.data)
 }
