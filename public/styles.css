@@ -3,28 +3,14 @@
 * {
   font-family: 'Mulish', sans-serif;
   font-weight: 300;
-}
-
-.hero {
-  background-color: #111;
-  margin-bottom: 20px;
-}
-
-.alignment {
-  display: flex;
-  align-items: center;
-}
-
-.logo-icon {
-  color: #ffd700;
-  padding-right: 15px;
-  padding-bottom: 5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
   font-family: 'Qwigley', cursive;
   font-size: 3rem;
-  color: #fffdfa;
 }
 
 
