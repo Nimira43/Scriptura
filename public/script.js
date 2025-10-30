@@ -26,4 +26,4 @@ const onInput = event => {
   fetchData(event.target.value)
 }
 
-input.addEventListener('input', debounce(onInput))
+input.addEventListener('input', debounce(onInput, 1000))
