@@ -22,9 +22,8 @@ const debounce = (func) => {
   }
 }
 
-
-const onInput = event => {
+const onInput = debounce(event => {
   fetchData(event.target.value)
-}
+})
 
 input.addEventListener('input', onInput)
