@@ -8,6 +8,9 @@ const fetchData = async (searchTerm) => {
 }
 
 const input = document.querySelector('input')
-input.addEventListener('input', (event) => {
+
+const onInput = event => {
   fetchData(event.target.value)
-})
+}
+
+input.addEventListener('input', onInput)
