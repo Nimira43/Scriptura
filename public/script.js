@@ -9,8 +9,12 @@ const fetchData = async (searchTerm) => {
 
 const input = document.querySelector('input')
 
+let timeoutId
+
 const onInput = event => {
-  fetchData(event.target.value)
+  setTimeout(() => {
+    fetchData(event.target.value)
+  }, 1000)
 }
 
 input.addEventListener('input', onInput)
