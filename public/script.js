@@ -12,10 +12,13 @@ const input = document.querySelector('input')
 const debounce = (func) => {
   let timeoutId
 
-  return () => {
+  return (...args) => {
     if (timeoutId) {
       clearTimeout(timeoutId)
     }
+    timeoutId = setTimeout(() => {
+      func.apply(null, args)
+    }, 1000);
   }
 }
 
