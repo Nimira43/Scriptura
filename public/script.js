@@ -24,10 +24,7 @@ const debounce = (func) => {
 
 
 const onInput = event => {
- 
-  timeoutId = setTimeout(() => {
-    fetchData(event.target.value)
-  }, 1000)
+  fetchData(event.target.value)
 }
 
 input.addEventListener('input', onInput)
