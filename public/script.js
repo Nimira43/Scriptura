@@ -11,6 +11,7 @@ const input = document.querySelector('input')
 
 const onInput = event => {
   const movies = fetchData(event.target.value)
+  console.log(movies)
 }
 
 input.addEventListener('input', debounce(onInput, 1000))
