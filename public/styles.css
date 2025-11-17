@@ -8,9 +8,41 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;   
+  color: #333;                
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .logo {
   font-family: 'Qwigley', cursive;
   font-size: 3rem;
+  color: #222;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #666;
+}
 
