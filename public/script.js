@@ -18,10 +18,7 @@ const onInput = async event => {
     div.innerHTML = `
       <img src="${movie.Poster}" />
       <h1>${movie.Title}</h1>
-    
-    
-    
-    `
+     `
 
   }
 }
