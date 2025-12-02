@@ -11,7 +11,10 @@ const input = document.querySelector('input')
 
 const onInput = async event => {
   const movies = await fetchData(event.target.value)
-  console.log(movies)
+  
+  for (let movie of movies) {
+    const div = document.createElement('div')
+  }
 }
 
 input.addEventListener('input', debounce(onInput, 1000))
