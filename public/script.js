@@ -16,8 +16,10 @@ const onInput = async event => {
     const div = document.createElement('div')
 
     div.innerHTML = `
-      <img src="${movie.Poster}" />
-      <h1>${movie.Title}</h1>
+      <div class='movie-card'>
+        <img src="${movie.Poster}" />
+        <h1>${movie.Title}</h1>
+      </div>
      `
 
     document.querySelector('#target').appendChild(div)
