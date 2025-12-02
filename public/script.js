@@ -20,6 +20,7 @@ const onInput = async event => {
       <h1>${movie.Title}</h1>
      `
 
+    document.querySelector('#target').appendChild(div)
   }
 }
 
