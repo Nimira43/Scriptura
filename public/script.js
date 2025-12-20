@@ -17,6 +17,8 @@ const input = document.querySelector('input')
 const onInput = async event => {
   const movies = await fetchData(event.target.value)
   
+  const target = document.querySelector('#target')
+  target.innerHTML = '' 
   for (let movie of movies) {
     const div = document.createElement('div')
 
